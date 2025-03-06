@@ -21,7 +21,11 @@ const ProfileCard: React.FC<ProfileCardProps> = ({
 }) => {
   return (
     <div className="profile-card">
-      <img src={avatarUrl} className="profile-card__avatar" />
+      <img
+        src={avatarUrl}
+        alt={`${name}'s avatar`}
+        className="profile-card__avatar"
+      />
       <h2 className="profile-card__name">{name}</h2>
       <p className="profile-card__title">{position}</p>
       <div className="card__social">
